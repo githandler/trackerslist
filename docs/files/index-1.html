@@ -1,0 +1,74 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>未知 </title></head><body>
+<p><strong>简要描述：</strong></p>
+<ul>
+<li>用户注册接口</li>
+</ul>
+<p><strong>请求URL：</strong>
+- <code>http://xx.com/api/user/register</code></p>
+<p><strong>请求方式：</strong>
+- POST</p>
+<p><strong>参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数名</th>
+<th align="left">必选</th>
+<th align="left">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">username</td>
+<td align="left">是</td>
+<td align="left">string</td>
+<td>用户名</td>
+</tr>
+<tr>
+<td align="left">password</td>
+<td align="left">是</td>
+<td align="left">string</td>
+<td>密码</td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">否</td>
+<td align="left">string</td>
+<td>昵称</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<p><code>{
+    "error_code": 0,
+    "data": {
+      "uid": "1",
+      "username": "12154545",
+      "name": "吴系挂",
+      "groupid": 2 ,
+      "reg_time": "1436864169",
+      "last_login_time": "0",
+    }
+  }</code></p>
+<p><strong>返回参数说明</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数名</th>
+<th align="left">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">groupid</td>
+<td align="left">int</td>
+<td>用户组id，1：超级管理员；2：普通用户</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注</strong></p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+</body></html>
